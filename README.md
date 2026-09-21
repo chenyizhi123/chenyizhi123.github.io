@@ -41,3 +41,5 @@ The author supplied their WeChat QR card and explicitly requested it on the publ
 
 ## Visual refinement
 A pale blue-gray surround frames the white reading column. First-author entries use a light blue surface and accent rule. Wide architecture figures span the reading column to preserve legibility; all source images remain uncropped. The biography distinguishes VLA, humanoid WAM, and humanoid locomotion/control.
+
+News lists author-confirmed acceptance announcements and the GeoAlign project page. Venue labels are used instead of unverified announcement dates.
