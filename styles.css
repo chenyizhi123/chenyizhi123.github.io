@@ -14,3 +14,20 @@
 #daac .figure-link{border-bottom:0;border-right:1px solid var(--line);height:100%;min-height:250px}
 @media(max-width:700px){.paper-card#daac{grid-template-columns:1fr}#daac .figure-link{height:auto;min-height:0;border-right:0;border-bottom:1px solid var(--line)}.text-only .paper-subtitle{display:block;margin:10px 0 0}}
 .paper-description{font-size:16px}.contact-section>div>p:last-child{font-size:16px}
+/* Contact details and the author's original, unmodified WeChat card. */
+.profile-links{flex-wrap:wrap;row-gap:12px}
+.contact-section{grid-template-columns:minmax(0,1fr) 300px;gap:80px;align-items:center}
+.contact-intro{margin-top:15px;color:var(--muted);font-size:16px}
+.contact-info .contact-details{margin-top:27px;max-width:485px}
+.contact-label{font-size:11px!important;letter-spacing:.1em;color:#7a889b;margin-bottom:8px}
+.contact-details>p:not(.contact-label){margin-top:12px;color:var(--muted)}
+.contact-socials{display:flex;flex-wrap:wrap;gap:24px;margin-top:20px;font-size:14px;color:var(--blue)}
+.wechat-card{width:300px;max-width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;padding:17px;scroll-margin-top:100px}
+.wechat-card h3{font-size:17px;font-weight:600;line-height:1.4}.wechat-card h3 span{font-size:14px;font-weight:400;color:var(--muted);margin-left:6px}
+.wechat-card figcaption>p{font-size:12px;color:var(--muted);margin-top:5px}
+.wechat-card>a{display:block;cursor:zoom-in;margin-top:8px}
+.wechat-card img{display:block;width:100%;height:auto;object-fit:contain}
+.wechat-actions{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin-top:9px;font-size:11px;color:var(--muted)}
+.wechat-actions a{color:var(--blue)}
+@media(max-width:1000px){.contact-section{gap:38px;grid-template-columns:minmax(0,1fr) 275px}.wechat-card{width:275px}}
+@media(max-width:700px){.contact-section{grid-template-columns:1fr;gap:30px}.wechat-card{width:300px;justify-self:center}.contact-info .contact-details{margin-top:25px}.profile-links{column-gap:21px}.wechat-actions{font-size:12px}}

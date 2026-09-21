@@ -34,3 +34,6 @@ GeoAlign's current architecture image and Project link come from the author's su
 - https://github.com/TATP-233 — First-author / Co-author organization.
 
 Original implementation; no reference-site source code copied.
+
+## Contact information
+The author supplied their WeChat QR card and explicitly requested it on the public homepage. `assets/wechat-contact.jpg` is an unchanged copy of that card, with full-size viewing and download. Email remains `1839132568@qq.com`; GitHub and Google Scholar links are also shown in Contact.
