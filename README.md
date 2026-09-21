@@ -42,4 +42,4 @@ The author supplied their WeChat QR card and explicitly requested it on the publ
 ## Visual refinement
 A pale blue-gray surround frames the white reading column. First-author entries use a light blue surface and accent rule. Wide architecture figures span the reading column to preserve legibility; all source images remain uncropped. The biography distinguishes VLA, humanoid WAM, and humanoid locomotion/control.
 
-News lists author-confirmed acceptance announcements and the GeoAlign project page. Venue labels are used instead of unverified announcement dates.
+News lists author-confirmed acceptance announcements and the GeoAlign project page. The author confirmed acceptance dates: HierKick — September 3, 2026; GeoAlign and UniLab (CoRL) — September 5, 2026. Other announcements retain venue/type labels until exact dates are confirmed.
