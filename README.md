@@ -4,7 +4,7 @@ A white-and-blue academic homepage focused on original paper architecture diagra
 
 ## Files
 - `index.html`: profile, eight publication entries, projects, and contact details.
-- `styles.css`: light palette, responsive research gallery, figure viewer, and print styles.
+- `styles.css`: light palette, responsive publication list, figure viewer, and print styles.
 - `script.js`: current-section navigation and accessible native-dialog figure enlargement. Escape closes the viewer and focus returns to the selected figure. Without JavaScript, figure links open the full image directly.
 - `assets/architecture/`: seven original paper architecture diagrams. `sources.json` records their provenance and licenses.
 - `credits.html`: public figure attribution.
@@ -30,6 +30,7 @@ The owner requested contribution labels instead of full author lists. Conference
 GeoAlign's current architecture image and Project link come from the author's supplied project page: https://chenyizhi123.github.io/geoalign-project/. GLAD and UniLab diagrams use the v3 papers. No authentic public MAKP method figure could be found; that entry is deliberately text-only without a substitute illustration.
 
 ## Design references
+- https://caozx1110.github.io/ — persistent profile sidebar, compact reading column, and publication hierarchy. Adapted as an original blue-and-white, figure-led layout.
 - https://tairanhe.com/ — academic profile and research-forward structure.
 - https://github.com/TATP-233 — First-author / Co-author organization.
 
