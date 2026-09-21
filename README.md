@@ -36,4 +36,4 @@ GeoAlign's current architecture image and Project link come from the author's su
 Original implementation; no reference-site source code copied.
 
 ## Contact information
-The author supplied their WeChat QR card and explicitly requested it on the public homepage. `assets/wechat-contact.jpg` is an unchanged copy of that card, with full-size viewing and download. Email remains `1839132568@qq.com`; GitHub and Google Scholar links are also shown in Contact.
+The author supplied their WeChat QR card and explicitly requested it on the public homepage. `assets/wechat-contact.jpg` is an unchanged copy of that card, with full-size viewing and download. Contact emails are `1839132568@qq.com` and `15970600542@163.com`; GitHub and Google Scholar links are also shown in Contact.
