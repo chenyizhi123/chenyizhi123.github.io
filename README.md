@@ -5,7 +5,7 @@ A white-and-blue academic homepage focused on original paper architecture diagra
 ## Files
 - `index.html`: profile, eight publication entries, projects, and contact details.
 - `styles.css`: light palette, responsive publication list, figure viewer, and print styles.
-- `script.js`: current-section navigation and accessible native-dialog figure enlargement. Escape closes the viewer and focus returns to the selected figure. Without JavaScript, figure links open the full image directly.
+- `script.js`: current-section navigation and accessible native-dialog figure enlargement with 1–4× zoom, fit reset, mouse dragging, native touch panning, and keyboard controls (+/−/0). Escape closes the viewer and focus returns to the selected figure. Without JavaScript, figure links open the full image directly.
 - `assets/architecture/`: seven original paper architecture diagrams. `sources.json` records their provenance and licenses.
 - `credits.html`: public figure attribution.
 - `avatar.jpg`: original profile illustration.
@@ -38,3 +38,6 @@ Original implementation; no reference-site source code copied.
 
 ## Contact information
 The author supplied their WeChat QR card and explicitly requested it on the public homepage. `assets/wechat-contact.jpg` is an unchanged copy of that card, with full-size viewing and download. Contact emails are `1839132568@qq.com` and `15970600542@163.com`; GitHub and Google Scholar links are also shown in Contact.
+
+## Visual refinement
+A pale blue-gray surround frames the white reading column. First-author entries use a light blue surface and accent rule. Wide architecture figures span the reading column to preserve legibility; all source images remain uncropped. The biography distinguishes VLA, humanoid WAM, and humanoid locomotion/control.
