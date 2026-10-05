@@ -19,7 +19,7 @@ No video playback, scroll reveals, external fonts, analytics, or tracking. Diagr
 - HierKick — Robotica, accepted; first author. No issue, volume, DOI, or publication date is inferred.
 - UniLab — CoRL 2026, accepted; co-author.
 - P³ — AAAI, under review; co-author. Conference year unspecified.
-- GLAD — RA-L, under review; co-author.
+- GLAD — RA-L, accepted; co-author (confirmed by author on October 5, 2026).
 - A2CF, DAAC, MAKP — ICRA 2026; co-author.
 
 The owner requested contribution labels instead of full author lists. Conference authorship for A2CF and DAAC was independently verified against the final official ICRA 2026 program; older arXiv versions have different author lists. The conference links are retained alongside explicitly labeled preprint links:
@@ -43,3 +43,5 @@ The author supplied their WeChat QR card and explicitly requested it on the publ
 A pale blue-gray surround frames the white reading column. All publication entries use the same light blue surface and accent rule, with separate first-author/co-author headings and role labels. Wide architecture figures span the reading column to preserve legibility; all source images remain uncropped. The biography distinguishes VLA, humanoid WAM, and humanoid locomotion/control.
 
 News lists acceptance announcements. The author confirmed acceptance dates: HierKick — September 3, 2026; GeoAlign and UniLab (CoRL) — September 5, 2026. The ICRA news date uses the official conference-wide acceptance notification date, January 31, 2026, rather than an independently verified individual email timestamp. Source: https://2026.ieee-icra.org/attend/registration-information/ (states authors received acceptance emails on January 31). The standalone project-page announcement was removed at the author’s request; the publication retains its Project link.
+
+On October 5, 2026 the author reported GLAD acceptance at RA-L; its News date is the announcement posting date, not an independently confirmed acceptance date. The research-experience gallery reuses original GLAD terrain, GeoAlign robot, and UniLab simulation images, preserving proportions and linking their sources in Media credits. No stock/AI images or inferred WAM results were added.
