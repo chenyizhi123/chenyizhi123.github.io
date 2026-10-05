@@ -47,3 +47,5 @@ News lists acceptance announcements. The author confirmed acceptance dates: Hier
 On October 5, 2026 the author reported GLAD acceptance at RA-L; its News date is the announcement posting date, not an independently confirmed acceptance date. The research-experience gallery reuses original GLAD terrain, GeoAlign robot, and UniLab simulation images, preserving proportions and linking their sources in Media credits. No stock/AI images or inferred WAM results were added.
 
 The author clarified that robot imagery should decorate the homepage, rather than form project content. The three images now appear as a compact decorative ribbon below the introduction, without project cards, captions or image-viewer interactions; source attributions remain in Media credits. The Experience section returns to its original text layout.
+
+The author selected a minimal technology visual direction: pure white background, graphite text, electric-blue accents, compact sans-serif typography, and consistent white publication cards. The decorative robot ribbon remains separate from project content.
