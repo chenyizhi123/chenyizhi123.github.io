@@ -39,13 +39,17 @@ Original implementation; no reference-site source code copied.
 ## Contact information
 The author supplied their WeChat QR card and explicitly requested it on the public homepage. `assets/wechat-contact.jpg` is an unchanged copy of that card, with full-size viewing and download. Contact emails are `1839132568@qq.com` and `15970600542@163.com`; GitHub and Google Scholar links are also shown in Contact.
 
-## Visual refinement
-A pale blue-gray surround frames the white reading column. All publication entries use the same light blue surface and accent rule, with separate first-author/co-author headings and role labels. Wide architecture figures span the reading column to preserve legibility; all source images remain uncropped. The biography distinguishes VLA, humanoid WAM, and humanoid locomotion/control.
+## Current presentation — October 23, 2026
 
-News lists acceptance announcements. The author confirmed acceptance dates: HierKick — September 3, 2026; GeoAlign and UniLab (CoRL) — September 5, 2026. The ICRA news date uses the official conference-wide acceptance notification date, January 31, 2026, rather than an independently verified individual email timestamp. Source: https://2026.ieee-icra.org/attend/registration-information/ (states authors received acceptance emails on January 31). The standalone project-page announcement was removed at the author’s request; the publication retains its Project link.
+The homepage uses a pale mineral background, white surfaces, graphite-blue typography, and a restrained cobalt accent. All publication cards share the same visual treatment and retain separate First-author / Co-author groups. Architecture figures preserve their full frames and original colors. The image viewer supports zoom and pan.
 
-On October 5, 2026 the author reported GLAD acceptance at RA-L; its News date is the announcement posting date, not an independently confirmed acceptance date. The research-experience gallery reuses original GLAD terrain, GeoAlign robot, and UniLab simulation images, preserving proportions and linking their sources in Media credits. No stock/AI images or inferred WAM results were added.
+The decorative opening mosaic contains three real robot platforms: Booster T1, Unitree G1, and ALOHA. Booster T1 comes from the real-world panel of HierKick Figure 3; the original combined figure is stored unchanged and only the real-world panel is shown through CSS. G1 is shown with its complete source frame. The earlier dexterous-hand simulation image is no longer displayed. `assets/robots/sources.json` and Media credits record provenance. The mosaic is separate from project and publication content.
 
-The author clarified that robot imagery should decorate the homepage, rather than form project content. The three images now appear as a compact decorative ribbon below the introduction, without project cards, captions or image-viewer interactions; source attributions remain in Media credits. The Experience section returns to its original text layout.
+## News dates
 
-The author selected a minimal technology visual direction: pure white background, graphite text, electric-blue accents, compact sans-serif typography, and consistent white publication cards. The decorative robot ribbon remains separate from project content.
+- GLAD — RA-L accepted, reported by the author on October 5, 2026. This is the announcement date; the precise acceptance date is not inferred.
+- GeoAlign and UniLab — CoRL 2026 accepted September 5, 2026, confirmed by the author.
+- HierKick — Robotica accepted September 3, 2026, confirmed by the author.
+- ICRA 2026 — January 31, 2026, the official conference acceptance notification date. Source: https://2026.ieee-icra.org/attend/registration-information/.
+
+The project-page launch announcement was removed at the author's request; the GeoAlign publication retains its Project link.

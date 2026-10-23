@@ -1,0 +1,22 @@
+[
+  {
+    "platform": "Booster T1",
+    "file": "assets/robots/booster-t1-environment.png",
+    "source_url": "https://arxiv.org/html/2603.00948v1/figure/sim-real.png",
+    "paper": "https://arxiv.org/abs/2603.00948",
+    "license": "CC BY 4.0",
+    "display": "CSS crop showing the left real-world panel only; original bytes unchanged."
+  },
+  {
+    "platform": "Unitree G1",
+    "file": "assets/glad.png",
+    "source_url": "https://arxiv.org/html/2606.00637v1/rel.png",
+    "license": "CC BY 4.0"
+  },
+  {
+    "platform": "ALOHA",
+    "file": "assets/geoalign-real-robot.jpg",
+    "source_url": "https://chenyizhi123.github.io/geoalign-project/static/images/posters/experiments/clip-01.jpg",
+    "note": "Author-supplied project media; reused original poster."
+  }
+]
