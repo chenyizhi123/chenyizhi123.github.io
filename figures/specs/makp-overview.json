@@ -1,0 +1,22 @@
+{
+  "title": "MAKP — method summary redrawn from the official ICRA 2026 abstract",
+  "canvas": {"width": 1280, "height": 420},
+  "style": {"font_family": "Arial, sans-serif", "font_size": 20, "bg_color": "#FFFFFF"},
+  "nodes": [
+    {"id":"motions","label":"Diffusion model\nDiverse kick motions","x":165,"y":185,"width":240,"height":116,"fill":"#F3F3F8","stroke":"#D8D9E4","text_color":"#303445","font_size":21},
+    {"id":"stage1","label":"1 · Stable tracking\nSingle-leg balance","x":480,"y":185,"width":270,"height":116,"fill":"#F0EDF8","stroke":"#C7C0DE","text_color":"#494274","font_size":21},
+    {"id":"stage2","label":"2 · Kicking skill\nImprove execution","x":810,"y":185,"width":270,"height":116,"fill":"#EEF2F9","stroke":"#BFCBE0","text_color":"#3D5474","font_size":21},
+    {"id":"stage3","label":"3 · Multi-critic\nCurriculum training","x":1130,"y":185,"width":260,"height":116,"fill":"#514A85","stroke":"#514A85","text_color":"#FFFFFF","font_size":21}
+  ],
+  "edges": [
+    {"from":"motions","to":"stage1","color":"#8A85A4"},
+    {"from":"stage1","to":"stage2","color":"#8A85A4"},
+    {"from":"stage2","to":"stage3","color":"#8A85A4"}
+  ],
+  "labels": [
+    {"text":"MAKP · Method overview","x":45,"y":45,"font_size":26,"color":"#292C39","anchor":"start"},
+    {"text":"Balance kick precision, motion fidelity and stability","x":640,"y":310,"font_size":22,"color":"#514A85","anchor":"middle"},
+    {"text":"Real-world validation on Booster T1","x":640,"y":351,"font_size":18,"color":"#545B6D","anchor":"middle"},
+    {"text":"Redrawn from the official ICRA 2026 abstract · not the original paper figure","x":640,"y":398,"font_size":16,"color":"#6B7082","anchor":"middle"}
+  ]
+}

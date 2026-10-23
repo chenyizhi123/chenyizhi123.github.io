@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 420" width="1280" height="420" font-family="Arial, sans-serif">
+  <rect width="1280" height="420" fill="#FFFFFF"/>
+  <defs>
+    <marker id="arrow-default" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#555555"/>
+    </marker>
+    <marker id="arrow-c0" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#2563EB"/>
+    </marker>
+    <marker id="arrow-c1" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#10B981"/>
+    </marker>
+    <marker id="arrow-c2" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#7C3AED"/>
+    </marker>
+    <marker id="arrow-c3" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#EA580C"/>
+    </marker>
+    <marker id="arrow-c4" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#C62828"/>
+    </marker>
+    <marker id="arrow-c5" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#0D47A1"/>
+    </marker>
+    <marker id="arrow-c6" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#1B5E20"/>
+    </marker>
+    <marker id="arrow-c7" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#4A148C"/>
+    </marker>
+    <marker id="arrow-c8" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#BF360C"/>
+    </marker>
+    <marker id="arrow-c9" markerWidth="10" markerHeight="10" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 8 4, 0 8" fill="#37474F"/>
+    </marker>
+  </defs>
+  <path d="M 285.0,185.0 L 345.0,185.0" stroke="#8A85A4" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 615.0,185.0 L 675.0,185.0" stroke="#8A85A4" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <path d="M 945.0,185.0 L 1000.0,185.0" stroke="#8A85A4" stroke-width="2" fill="none" marker-end="url(#arrow-default)"/>
+  <rect x="45.0" y="127.0" width="240.0" height="116.0" fill="#F3F3F8" stroke="#D8D9E4" stroke-width="2" rx="8"/>
+  <text x="165.0" y="180.8" font-size="21" fill="#303445" text-anchor="middle" font-weight="bold">Diffusion model</text>
+  <text x="165.0" y="203.8" font-size="21" fill="#303445" text-anchor="middle" font-weight="bold">Diverse kick motions</text>
+  <rect x="345.0" y="127.0" width="270.0" height="116.0" fill="#F0EDF8" stroke="#C7C0DE" stroke-width="2" rx="8"/>
+  <text x="480.0" y="180.8" font-size="21" fill="#494274" text-anchor="middle" font-weight="bold">1 · Stable tracking</text>
+  <text x="480.0" y="203.8" font-size="21" fill="#494274" text-anchor="middle" font-weight="bold">Single-leg balance</text>
+  <rect x="675.0" y="127.0" width="270.0" height="116.0" fill="#EEF2F9" stroke="#BFCBE0" stroke-width="2" rx="8"/>
+  <text x="810.0" y="180.8" font-size="21" fill="#3D5474" text-anchor="middle" font-weight="bold">2 · Kicking skill</text>
+  <text x="810.0" y="203.8" font-size="21" fill="#3D5474" text-anchor="middle" font-weight="bold">Improve execution</text>
+  <rect x="1000.0" y="127.0" width="260.0" height="116.0" fill="#514A85" stroke="#514A85" stroke-width="2" rx="8"/>
+  <text x="1130.0" y="180.8" font-size="21" fill="#FFFFFF" text-anchor="middle" font-weight="bold">3 · Multi-critic</text>
+  <text x="1130.0" y="203.8" font-size="21" fill="#FFFFFF" text-anchor="middle" font-weight="bold">Curriculum training</text>
+  <text x="45.0" y="45.0" font-size="26" fill="#292C39" text-anchor="start">MAKP · Method overview</text>
+  <text x="640.0" y="310.0" font-size="22" fill="#514A85" text-anchor="middle">Balance kick precision, motion fidelity and stability</text>
+  <text x="640.0" y="351.0" font-size="18" fill="#545B6D" text-anchor="middle">Real-world validation on Booster T1</text>
+  <text x="640.0" y="398.0" font-size="16" fill="#6B7082" text-anchor="middle">Redrawn from the official ICRA 2026 abstract · not the original paper figure</text>
+</svg>

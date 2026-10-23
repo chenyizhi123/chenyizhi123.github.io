@@ -6,7 +6,7 @@ A white-and-blue academic homepage focused on original paper architecture diagra
 - `index.html`: profile, eight publication entries, projects, and contact details.
 - `styles.css`: light palette, responsive publication list, figure viewer, and print styles.
 - `script.js`: current-section navigation and accessible native-dialog figure enlargement with 1–4× zoom, fit reset, mouse dragging, native touch panning, and keyboard controls (+/−/0). Escape closes the viewer and focus returns to the selected figure. Without JavaScript, figure links open the full image directly.
-- `assets/architecture/`: seven original paper architecture diagrams. `sources.json` records their provenance and licenses.
+- `assets/architecture/`: seven original paper architecture diagrams and a clearly labeled, abstract-based MAKP overview. `sources.json` records their provenance and licenses.
 - `credits.html`: public figure attribution.
 - `avatar.jpg`: original profile illustration.
 
@@ -27,7 +27,7 @@ The owner requested contribution labels instead of full author lists. Conference
 - DAAC: https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei2i_317
 - MAKP: https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2i_158
 
-GeoAlign's current architecture image and Project link come from the author's supplied project page: https://chenyizhi123.github.io/geoalign-project/. GLAD and UniLab diagrams use the v3 papers. No authentic public MAKP method figure could be found; that entry is deliberately text-only without a substitute illustration.
+GeoAlign's current architecture image and Project link come from the author's supplied project page: https://chenyizhi123.github.io/geoalign-project/. GLAD and UniLab diagrams use the v3 papers. The MAKP publisher record and DOI were verified. Its public conference abstract provides a diffusion generator, three learning stages, and Booster T1 validation. The site now includes an original FigureSpec method-summary SVG based only on that abstract, clearly labeled as a redrawn overview, rather than a paper figure. No inaccessible full-paper details are inferred.
 
 ## Design references
 - https://caozx1110.github.io/ — persistent profile sidebar, compact reading column, and publication hierarchy. Adapted as an original blue-and-white, figure-led layout.
@@ -57,3 +57,10 @@ The project-page launch announcement was removed at the author's request; the Ge
 The author also confirmed development work on Unitree Go2, Go2W, B2W, and HONOR quadruped robots on October 23, 2026. This is explicitly described in Experience. The Go2 photo is DAAC Figure 6 (left panel), shown as an additional decorative tile. No Go2W or HONOR photo is substituted from another platform.
 
 The opening hardware line explicitly lists Booster T1, G1, Go2, Go2W, B2W, HONOR quadrupeds and ALOHA. The owner disliked the green theme; the current palette uses neutral mist-white and charcoal with restrained slate-violet accents. All robot photo labels have the same small decorative dot, generated consistently with CSS.
+
+## Research exploration and navigation
+Publication search supports titles, methods, and confirmed robot platforms. Topic lenses, publication-status filters, accurate visible counts, empty states and Reset combine without changing the source publication metadata. News and quick-navigation links reveal any hidden target paper. Static HTML still shows every publication when JavaScript is disabled.
+
+Quick navigation is available from the header and Cmd/Ctrl+K; arrow keys and Enter move and select. Escape closes even when the search field contains text. The / key focuses publication search. Native figure zoom and focus restoration remain available.
+
+The current refinement deepens graphite/violet text and badge colors. All four robot labels retain their matching dot. MAKP's source is saved in figures/specs/makp-overview.json; the SVG and vector PDF are reproducible exports.

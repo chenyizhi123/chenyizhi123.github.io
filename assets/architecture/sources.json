@@ -135,14 +135,16 @@
   {
     "paper": "makp",
     "title": "MAKP: Multi-Mode Accurate Kicking Policy for Humanoid Robots",
-    "file": null,
-    "status": "unavailable",
-    "reason": "No public method figure or full paper located via title, acronym, author searches and homepage/program links; no substitute image downloaded.",
-    "paper_url": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2i_158",
-    "source_url": null,
-    "caption": null,
-    "width": null,
-    "height": null,
-    "license": null
+    "file": "assets/architecture/makp-overview.svg",
+    "type": "original_abstract_based_method_summary",
+    "status": "available_redrawn_summary",
+    "paper_url": "https://doi.org/10.1109/ICRA57385.2026.11697574",
+    "source_url": "https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2i_158",
+    "caption": "Original method-summary diagram based only on the official abstract; not a figure reproduced from the paper. Diffusion motion generation, three learning stages, and Booster T1 validation.",
+    "width": 1280,
+    "height": 420,
+    "spec": "figures/specs/makp-overview.json",
+    "license_name": "Original site artwork; source abstract attributed.",
+    "visually_verified": true
   }
 ]
