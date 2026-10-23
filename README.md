@@ -41,7 +41,7 @@ The author supplied their WeChat QR card and explicitly requested it on the publ
 
 ## Current presentation — October 23, 2026
 
-The homepage uses a mist-white background, white surfaces, graphite typography, and muted jade-green accents. All publication cards share the same visual treatment and retain separate First-author / Co-author groups. Architecture figures preserve their full frames and original colors. The image viewer supports zoom and pan.
+The homepage uses a mist-white background, white surfaces, charcoal typography, and restrained slate-violet accents. All publication cards share the same visual treatment and retain separate First-author / Co-author groups. Architecture figures preserve their full frames and original colors. The image viewer supports zoom and pan.
 
 The decorative opening mosaic contains four real robot platforms: Booster T1, Unitree Go2, Unitree G1, and ALOHA. Booster T1 comes from the real-world panel of HierKick Figure 3; the original combined figure is stored unchanged and only the real-world panel is shown through CSS. G1 is shown with its complete source frame. The earlier dexterous-hand simulation image is no longer displayed. `assets/robots/sources.json` and Media credits record provenance. The mosaic is separate from project and publication content.
 
@@ -56,4 +56,4 @@ The project-page launch announcement was removed at the author's request; the Ge
 
 The author also confirmed development work on Unitree Go2, Go2W, B2W, and HONOR quadruped robots on October 23, 2026. This is explicitly described in Experience. The Go2 photo is DAAC Figure 6 (left panel), shown as an additional decorative tile. No Go2W or HONOR photo is substituted from another platform.
 
-The opening hardware line explicitly lists Booster T1, G1, Go2, Go2W, B2W, HONOR quadrupeds and ALOHA. The owner requested exploration beyond blue; the current palette uses muted jade, with dark graphite body text and mist-white surfaces.
+The opening hardware line explicitly lists Booster T1, G1, Go2, Go2W, B2W, HONOR quadrupeds and ALOHA. The owner disliked the green theme; the current palette uses neutral mist-white and charcoal with restrained slate-violet accents. All robot photo labels have the same small decorative dot, generated consistently with CSS.
