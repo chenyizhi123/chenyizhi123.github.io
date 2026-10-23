@@ -18,5 +18,13 @@
     "file": "assets/geoalign-real-robot.jpg",
     "source_url": "https://chenyizhi123.github.io/geoalign-project/static/images/posters/experiments/clip-01.jpg",
     "note": "Author-supplied project media; reused original poster."
+  },
+  {
+    "platform": "Unitree Go2",
+    "file": "assets/robots/go2-real-world.png",
+    "source_url": "https://arxiv.org/html/2506.00472v1/exp5.png",
+    "paper_url": "https://arxiv.org/abs/2506.00472",
+    "license": "CC BY 4.0",
+    "display": "Left panel of Figure 6 shown with CSS crop; original source file unchanged."
   }
 ]
