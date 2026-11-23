@@ -1,19 +1,850 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Yizhi Chen, Ph.D. student at Tongji University and Shanghai Innovation Institute. Research in vision-language-action models, humanoid WAM, robot learning, and humanoid locomotion.">
-<meta name="theme-color" content="#f7f7fa"><meta property="og:title" content="Yizhi Chen — Robot Learning"><meta property="og:description" content="Research on geometry-aware manipulation, humanoid WAM, humanoid locomotion, and reinforcement learning."><meta property="og:type" content="website"><meta property="og:url" content="https://chenyizhi123.github.io/">
-<title>Yizhi Chen — Robot Learning</title>
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='15' fill='%235d63a7'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='600' font-size='28' text-anchor='middle' fill='white'%3EYC%3C/text%3E%3C/svg%3E">
-<link rel="stylesheet" href="styles.css?v=11"><script src="script.js?v=11" defer></script>
-</head><body id="top"><a class="skip-link" href="#main">Skip to content</a>
-<div class="page-layout"><aside class="profile-sidebar" aria-label="Profile"><a class="portrait-link" href="#about" aria-label="About Yizhi Chen"><img src="avatar.jpg" width="900" height="900" alt="Yizhi Chen’s illustrated profile image" fetchpriority="high"></a><h1>Yizhi Chen<span>.</span></h1><p class="sidebar-role">Ph.D. Student</p><p class="affiliation">Tongji University<br>Shanghai Innovation Institute</p><div class="profile-links"><a class="primary-link" href="https://scholar.google.com/citations?user=q47_njAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a><a href="https://github.com/chenyizhi123" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a href="mailto:1839132568@qq.com">Email <span aria-hidden="true">↗</span></a><a href="#wechat">WeChat <span aria-hidden="true">↘</span></a></div><div class="sidebar-focus"><p class="eyebrow">RESEARCH FOCUS</p><p>Vision-language-action<br>Humanoid WAM<br>Reinforcement learning<br>Locomotion &amp; control<br>Sim-to-real</p></div></aside><div class="content-column"><header class="site-header"><nav class="nav-links" aria-label="Main navigation"><a href="#about">About</a><a href="#news">News</a><a href="#research">Publications</a><a href="#projects">Experience</a><a href="#contact">Contact</a></nav><button type="button" class="command-trigger" aria-label="Open quick navigation" aria-haspopup="dialog" hidden><span>Jump to</span><kbd>⌘ K</kbd></button></header><main id="main"><section class="wrap profile-section" id="about" aria-labelledby="about-title"><p class="eyebrow">ROBOT LEARNING &amp; EMBODIED INTELLIGENCE</p><h2 id="about-title">About me</h2><p class="profile-intro">I study how robots <strong>understand the world</strong> and turn that understanding into <strong>action.</strong></p><p class="bio">I am a Ph.D. student at Tongji University and Shanghai Innovation Institute. My research centers on three connected directions: geometry-aware vision-language-action models, humanoid WAM, and humanoid locomotion and control. Across these directions, I use reinforcement learning and real-world evaluation to study reliable robot behavior.</p><div class="research-directions"><span>Vision-language-action</span><span>Humanoid WAM</span><span>Reinforcement learning</span><span>Locomotion &amp; control</span><span>Sim-to-real</span></div><div class="robot-visuals" role="group" aria-label="Real robot platforms"><div class="robot-photo booster-photo"><img src="assets/robots/booster-t1-environment.png" width="1240" height="536" alt="Booster T1 humanoid robot with a soccer ball on the real HierKick test field" decoding="async" fetchpriority="high"><span class="robot-photo-label">Booster T1</span></div><div class="robot-photo go2-photo"><img src="assets/robots/go2-real-world.png" width="1528" height="538" alt="Unitree Go2 quadruped robot in a real-world DAAC experiment" decoding="async"><span class="robot-photo-label">Unitree Go2</span></div><div class="robot-photo g1-photo"><img src="assets/glad.png" width="1448" height="820" alt="Unitree G1 humanoid robot crossing terrain during real-world experiments" decoding="async"><span class="robot-photo-label">Unitree G1</span></div><div class="robot-photo aloha-photo"><img src="assets/geoalign-real-robot.jpg" width="800" height="450" alt="ALOHA robot arm performing real-world tabletop manipulation" decoding="async"><span class="robot-photo-label">ALOHA</span></div></div><div class="platform-line"><span>Hands-on platforms</span><p>Booster T1 · Unitree G1, Go2, Go2W &amp; B2W · HONOR quadrupeds · ALOHA</p></div></section>
-<section class="wrap news-section" id="news" aria-labelledby="news-title"><div class="section-heading"><div><p class="eyebrow">LATEST UPDATES</p><h2 id="news-title">News</h2></div></div><ul class="news-list"><li><time class="news-label" datetime="2026-11-23">Nov 23, 2026</time><p>Released <a href="#zeta0">ζ₀</a>, our World Action Model framework with joint scene-and-body foresight for humanoid control (<a href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">project page</a> &amp; <a href="https://github.com/chenyizhi123/Zeta0" target="_blank" rel="noopener noreferrer">code</a>).</p></li><li><time class="news-label" datetime="2026-10-05" title="News posted on October 5, 2026">Oct 5, 2026</time><p><a href="#glad">GLAD</a> has been accepted to IEEE Robotics and Automation Letters (RA-L).</p></li><li><time class="news-label" datetime="2026-09-05">Sep 5, 2026</time><p><a href="#geoalign">GeoAlign</a> and <a href="#unilab">UniLab</a> have been accepted to CoRL 2026.</p></li><li><time class="news-label" datetime="2026-09-03">Sep 3, 2026</time><p><a href="#hierkick">HierKick</a> has been accepted to Robotica.</p></li><li><time class="news-label" datetime="2026-01-31" title="ICRA 2026 official acceptance notification date">Jan 31, 2026</time><p><a href="#a2cf">A2CF</a>, <a href="#daac">DAAC</a>, and <a href="#makp">MAKP</a> have been accepted to ICRA 2026.</p></li></ul></section>
-<section class="wrap research-section" id="research" aria-labelledby="research-title"><div class="section-heading"><div><p class="eyebrow">RESEARCH</p><h2 id="research-title">Selected publications</h2></div><a class="section-link" href="https://scholar.google.com/citations?user=q47_njAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a></div>
-<div class="publication-explorer" hidden><div class="lens-heading"><div><span class="lens-kicker">RESEARCH EXPLORER</span><p>Follow a research thread.</p></div><button type="button" class="reset-research" aria-label="Reset all publication filters">Reset ↺</button></div><div class="topic-filters" role="group" aria-label="Filter papers by research focus"><button type="button" data-topic-filter="all" aria-pressed="true">All research <span>↗</span></button><button type="button" data-topic-filter="vla" aria-pressed="false">VLA &amp; geometry <span>↗</span></button><button type="button" data-topic-filter="locomotion" aria-pressed="false">Locomotion &amp; control <span>↗</span></button><button type="button" data-topic-filter="rl" aria-pressed="false">RL &amp; systems <span>↗</span></button></div><p class="lens-description">Explore connections across robot perception, control, and learning.</p><div class="publication-search-row"><label class="publication-search"><span class="sr-only">Search publications</span><span aria-hidden="true">⌕</span><input type="search" id="paper-search" placeholder="Search papers, methods, or robots…" autocomplete="off"><kbd>/</kbd></label><div class="status-filters" role="group" aria-label="Filter by publication status"><button type="button" data-status-filter="all" aria-pressed="true">All</button><button type="button" data-status-filter="accepted" aria-pressed="false">Accepted</button><button type="button" data-status-filter="review" aria-pressed="false">Preprint / Review</button></div></div><p class="filter-summary" role="status" aria-live="polite">9 publications</p></div><div class="research-empty" hidden><p>No papers match these filters.</p><button type="button" class="clear-research">Show all research ↗</button></div><div class="group-heading"><h3>First-author work</h3><span>03 papers</span></div><div class="paper-grid"><article class="paper-card featured" id="zeta0" data-keywords="Unitree G1 humanoid world action model WAM foresight GR00T Psi0 whole-body control dual-response" data-topics="vla locomotion"><a class="figure-link wide-figure" href="assets/architecture/zeta0.png" data-figure data-caption="ζ₀ — method overview" aria-label="Enlarge ζ₀ architecture diagram"><img src="assets/architecture/zeta0.png" width="1815" height="728" alt="ζ₀ framework architecture diagram showing joint scene-and-body future latent representation and dual-response transfer" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue review">Preprint · 2026</span><span class="role-label">Co-first author</span></div><h4><a href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">ζ₀<span class="paper-subtitle">A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control</span></a></h4><p class="paper-description">Joint scene-and-body foresight with dual-response transfer turns VLA policies into whole-body humanoid World Action Models.</p><div class="paper-links"><a href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a><a href="https://chenyizhi123.github.io/zeta0-project/assets/Zeta0-Humanoid-Full.pdf" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/chenyizhi123/Zeta0" target="_blank" rel="noopener noreferrer">Code &amp; Data <span aria-hidden="true">↗</span></a></div></div></article><article class="paper-card featured" id="geoalign" data-keywords="ALOHA manipulation robot state" data-topics="vla"><a class="figure-link" href="assets/architecture/geoalign.png" data-figure data-caption="GeoAlign — method overview" aria-label="Enlarge GeoAlign architecture diagram"><img src="assets/architecture/geoalign.png" alt="GeoAlign method architecture diagram from the paper" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue">CoRL 2026 · Accepted</span><span class="role-label">First author</span></div><h4><a href="https://arxiv.org/abs/2606.03240" target="_blank" rel="noopener noreferrer">GeoAlign<span class="paper-subtitle">Beyond Semantics with State-Guided Spatial Alignment in VLA Models</span></a></h4><p class="paper-description">Robot-state-guided spatial alignment brings geometry into VLA policies for precise manipulation.</p><div class="paper-links"><a href="https://chenyizhi123.github.io/geoalign-project/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2606.03240" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a></div></div></article><article class="paper-card featured" id="hierkick" data-keywords="Booster T1 soccer hierarchical reinforcement learning" data-topics="locomotion rl"><a class="figure-link wide-figure" href="assets/architecture/hierkick.png" data-figure data-caption="HierKick — method overview" aria-label="Enlarge HierKick architecture diagram"><img src="assets/architecture/hierkick.png" alt="HierKick method architecture diagram from the paper" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue">Robotica · Accepted</span><span class="role-label">First author</span></div><h4><a href="https://arxiv.org/abs/2603.00948" target="_blank" rel="noopener noreferrer">HierKick<span class="paper-subtitle">Hierarchical Reinforcement Learning for Vision-Guided Soccer Robot Control</span></a></h4><p class="paper-description">Visual decision-making and reusable motion skills connect approaching, aligning, dribbling, and kicking.</p><div class="paper-links"><a href="https://arxiv.org/abs/2603.00948" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a></div></div></article></div><div class="group-heading coauthor-heading"><h3>Co-authored research</h3><span>06 papers</span></div><div class="paper-grid"><article class="paper-card featured" id="unilab" data-keywords="CPU GPU simulation training infrastructure" data-topics="rl"><a class="figure-link wide-figure" href="assets/architecture/unilab.png" data-figure data-caption="UniLab — method overview" aria-label="Enlarge UniLab architecture diagram"><img src="assets/architecture/unilab.png" alt="UniLab method architecture diagram from the paper" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue">CoRL 2026 · Accepted</span><span class="role-label">Co-author</span></div><h4><a href="https://arxiv.org/abs/2605.30313" target="_blank" rel="noopener noreferrer">UniLab<span class="paper-subtitle">A Heterogeneous Architecture for Robot RL Beyond GPU-Dominant Paradigms</span></a></h4><p class="paper-description">Decoupling CPU simulation and GPU learning to build an efficient, cross-platform training system.</p><div class="paper-links"><a href="https://unilabsim.github.io/" target="_blank" rel="noopener noreferrer">Project <span aria-hidden="true">↗</span></a><a href="https://arxiv.org/abs/2605.30313" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a></div></div></article><article class="paper-card featured" id="p3" data-keywords="VAE latent stochastic reinforcement learning" data-topics="rl"><a class="figure-link wide-figure" href="assets/architecture/p3.png" data-figure data-caption="P³ — method overview" aria-label="Enlarge P³ architecture diagram"><img src="assets/architecture/p3.png" alt="P³ method architecture diagram from the paper" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue review">AAAI · Under review</span><span class="role-label">Co-author</span></div><h4><a href="https://arxiv.org/abs/2607.25541" target="_blank" rel="noopener noreferrer">P³<span class="paper-subtitle">Probabilistic Policy Propagation for Stable VAE-Based Robot Learning</span></a></h4><p class="paper-description">Distribution-aware optimization for more stable policy learning with stochastic latent representations.</p><div class="paper-links"><a href="https://arxiv.org/abs/2607.25541" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://github.com/ylyem9x/P3_Open" target="_blank" rel="noopener noreferrer">Code <span aria-hidden="true">↗</span></a></div></div></article><article class="paper-card featured" id="glad" data-keywords="Unitree G1 terrain perception attention" data-topics="vla locomotion rl"><a class="figure-link wide-figure" href="assets/architecture/glad.png" data-figure data-caption="GLAD — method overview" aria-label="Enlarge GLAD architecture diagram"><img src="assets/architecture/glad.png" alt="GLAD method architecture diagram from the paper" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue">RA-L · Accepted</span><span class="role-label">Co-author</span></div><h4><a href="https://arxiv.org/abs/2606.00637" target="_blank" rel="noopener noreferrer">GLAD<span class="paper-subtitle">Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion</span></a></h4><p class="paper-description">Separating global terrain context and state-conditioned foothold attention for perceptive locomotion.</p><div class="paper-links"><a href="https://arxiv.org/abs/2606.00637" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a></div></div></article><article class="paper-card featured" id="a2cf" data-keywords="humanoid motion skills curriculum assistance" data-topics="locomotion rl"><a class="figure-link" href="assets/architecture/a2cf.png" data-figure data-caption="A2CF — method overview" aria-label="Enlarge A2CF architecture diagram"><img src="assets/architecture/a2cf.png" alt="A2CF method architecture diagram from the paper" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue">ICRA 2026 · Accepted</span><span class="role-label">Co-author</span></div><h4><a href="https://arxiv.org/abs/2506.23125" target="_blank" rel="noopener noreferrer">A2CF<span class="paper-subtitle">Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots</span></a></h4><p class="paper-description">Adaptive assistance guides motion learning and gradually gives way to independent robot skills.</p><div class="paper-links"><a href="https://arxiv.org/abs/2506.23125" target="_blank" rel="noopener noreferrer">Preprint <span aria-hidden="true">↗</span></a><a href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_5.html#thi2i_317" target="_blank" rel="noopener noreferrer">Conference <span aria-hidden="true">↗</span></a></div></div></article><article class="paper-card featured" id="daac" data-keywords="Unitree Go2 quadruped disturbance compensation" data-topics="locomotion rl"><a class="figure-link wide-figure" href="assets/architecture/daac.png" data-figure data-caption="DAAC — method overview" aria-label="Enlarge DAAC architecture diagram"><img src="assets/architecture/daac.png" alt="DAAC method architecture diagram from the paper" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><div class="paper-body"><div class="paper-meta"><span class="venue">ICRA 2026 · Accepted</span><span class="role-label">Co-author</span></div><h4><a href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noopener noreferrer">DAAC<span class="paper-subtitle">Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy for Legged Robots</span></a></h4><p class="paper-description">Combining position and torque control with disturbance estimation for resilient legged locomotion.</p><div class="paper-links"><a href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noopener noreferrer">Preprint <span aria-hidden="true">↗</span></a><a href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei2i_317" target="_blank" rel="noopener noreferrer">Conference <span aria-hidden="true">↗</span></a></div></div></article><article class="paper-card featured" id="makp" data-keywords="Booster T1 soccer diffusion motion generation multi-critic curriculum" data-topics="locomotion rl"><a class="figure-link wide-figure" href="assets/architecture/makp-overview.svg" data-figure data-caption="MAKP — method summary redrawn from the official ICRA abstract" aria-label="Enlarge MAKP abstract-based method summary"><img src="assets/architecture/makp-overview.svg" width="1280" height="420" alt="MAKP method summary: diffusion-generated motions, stable tracking, kicking skill and multi-critic curriculum training; redrawn from the official abstract" loading="lazy"><span class="figure-zoom" aria-hidden="true">↗</span></a><p class="figure-note">Method overview · redrawn from the official ICRA abstract</p><div class="paper-body"><div class="paper-meta"><span class="venue">ICRA 2026 · Accepted</span><span class="role-label">Co-author</span></div><h4><a href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2i_158" target="_blank" rel="noopener noreferrer">MAKP<span class="paper-subtitle">Multi-Mode Accurate Kicking Policy for Humanoid Robots</span></a></h4><p class="paper-description">Motion generation and staged policy learning balance kicking accuracy, motion similarity, and stability.</p><div class="paper-links"><a href="https://doi.org/10.1109/ICRA57385.2026.11697574" target="_blank" rel="noopener noreferrer">Paper <span aria-hidden="true">↗</span></a><a href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2i_158" target="_blank" rel="noopener noreferrer">Conference <span aria-hidden="true">↗</span></a></div></div></article></div></section>
-<section class="projects-section" id="projects"><div class="wrap"><div class="section-heading"><div><p class="eyebrow">HANDS-ON RESEARCH</p><h2>From policies to real robots</h2></div></div><div class="project-grid"><article><p class="project-label">PERCEPTION &amp; CONTROL</p><h3>Wheel-legged locomotion<br>&amp; perceptive walking</h3><p>I led a four-person team working on wheel-legged control, state estimation, depth-camera perception, LiDAR elevation maps, and terrain fusion.</p><div class="project-tags"><span>State estimation</span><span>Terrain perception</span></div></article><article><p class="project-label">REAL-WORLD EVALUATION</p><h3>Quadruped development<br>&amp; robot deployment</h3><p>Robot development on Unitree Go2, Go2W and B2W, and HONOR quadruped platforms. My hands-on work also spans motion-control validation, deployment, task evaluation, and failure localization across Booster T1, Unitree G1, and ALOHA.</p><div class="project-tags"><span>Sim-to-real</span><span>System debugging</span></div></article></div></div></section>
-<section class="wrap contact-section" id="contact" aria-labelledby="contact-title"><div class="contact-info"><p class="eyebrow">CONTACT</p><h2 id="contact-title">Let’s connect.</h2><p class="contact-intro">For conversations about robot learning<br>and embodied intelligence.</p><div class="contact-details"><p class="contact-label">EMAIL</p><a class="email" href="mailto:1839132568@qq.com">1839132568@qq.com <span aria-hidden="true">↗</span></a><a class="email" href="mailto:15970600542@163.com">15970600542@163.com <span aria-hidden="true">↗</span></a><p>Tongji University · Shanghai Innovation Institute</p><div class="contact-socials"><a href="https://scholar.google.com/citations?user=q47_njAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://github.com/chenyizhi123" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div></div><figure class="wechat-card" id="wechat"><figcaption><h3>WeChat <span>微信</span></h3><p>Scan with WeChat to connect.</p></figcaption><a href="assets/wechat-contact.jpg" data-figure data-caption="WeChat · 微信" aria-label="Enlarge Yizhi Chen’s WeChat QR code"><img src="assets/wechat-contact.jpg" width="888" height="1131" alt="Yizhi Chen’s WeChat contact QR code, nickname sunshine" loading="lazy"></a><div class="wechat-actions"><span>Click image to enlarge</span><a href="assets/wechat-contact.jpg" download="Yizhi-Chen-WeChat.jpg">Save QR code ↓</a></div></figure></section></main>
-<footer class="wrap site-footer"><span>© <span id="year">2026</span> Yizhi Chen</span><a href="credits.html">Media credits</a><a href="#top">Back to top ↑</a></footer></div></div>
-<dialog class="figure-dialog" aria-labelledby="figure-dialog-title"><div class="dialog-toolbar"><h2 id="figure-dialog-title">Method overview</h2><div><a class="original-link" href="assets/architecture/geoalign.png" target="_blank" rel="noopener noreferrer">Full image ↗</a><button type="button" class="dialog-close" aria-label="Close image">×</button></div></div><div class="zoom-toolbar" role="group" aria-label="Image zoom controls"><button type="button" class="zoom-out" aria-label="Zoom out">−</button><output class="zoom-value" aria-live="polite">100%</output><button type="button" class="zoom-in" aria-label="Zoom in">+</button><button type="button" class="zoom-fit">Fit image</button><span class="zoom-hint" id="zoom-help">Zoom in, then drag to explore · + / − to zoom · 0 to fit</span></div><div class="dialog-image-area" tabindex="0" role="region" aria-label="Zoomable image" aria-describedby="zoom-help"><div class="image-stage"><img alt="" draggable="false"></div></div></dialog>
-<dialog class="command-dialog" aria-labelledby="command-title"><div class="command-top"><div><p class="lens-kicker">QUICK NAVIGATION</p><h2 id="command-title">Where would you like to go?</h2></div><button type="button" class="command-close" aria-label="Close quick navigation">×</button></div><label class="command-search"><span class="sr-only">Search sections and publications</span><span aria-hidden="true">⌕</span><input type="search" placeholder="Search a section or paper…" autocomplete="off"></label><div class="command-results"></div><p class="command-empty" role="status" hidden>No matching destination.</p><div class="command-footer"><span>↑ ↓ to move · Enter to open</span><span>Esc to close</span></div></dialog>
-</body></html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Yizhi Chen — Ph.D. student at Tongji University and Shanghai Innovation Institute. Research in World Action Models, vision-language-action policies, humanoid whole-body control, and robot learning." />
+  <meta name="theme-color" content="#faf8f5" />
+  <meta property="og:title" content="Yizhi Chen — Robot Learning & Embodied Intelligence" />
+  <meta property="og:description" content="Ph.D. student at Tongji University & Shanghai Innovation Institute. Humanoid World Action Models, geometry-aware VLA policies, and whole-body locomotion & control." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://chenyizhi123.github.io/" />
+  <title>Yizhi Chen — Robot Learning &amp; Embodied Intelligence</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23171615'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-weight='600' font-size='26' text-anchor='middle' fill='%23faf8f5'%3EYC%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;1,8..60,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=13" />
+  <script src="script.js?v=13" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Sticky Editorial Navigation -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top" aria-label="Yizhi Chen home">
+        <span class="brand-mark">YC</span>
+        <span class="brand-text">
+          <strong>Yizhi Chen</strong>
+          <span>Embodied AI &amp; Robot Learning</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Publications</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#projects">Systems</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="topbar-actions">
+        <button type="button" class="command-trigger" aria-label="Open quick navigation" aria-haspopup="dialog">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <span>Jump to</span>
+          <kbd>&#8984;K</kbd>
+        </button>
+        <a class="topbar-pill" href="https://scholar.google.com/citations?user=q47_njAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+          Scholar <span aria-hidden="true">&#8599;</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- EDITORIAL HERO: PROFILE + INTERACTIVE LIVE ROBOT REEL -->
+    <section class="hero-section" id="about" aria-labelledby="hero-name">
+      <div class="container hero-grid">
+        <!-- Left: Researcher Identity -->
+        <div class="hero-profile">
+          <div class="profile-top">
+            <a class="avatar-frame" href="#contact" aria-label="Yizhi Chen portrait">
+              <img src="avatar.jpg" width="900" height="900" alt="Yizhi Chen’s illustrated portrait" fetchpriority="high" />
+            </a>
+            <div class="profile-heading">
+              <div class="status-chip">
+                <span class="live-dot"></span>
+                <span>Ph.D. Student · Embodied AI</span>
+              </div>
+              <h1 id="hero-name">Yizhi Chen</h1>
+              <div class="inst-row" aria-label="Affiliations">
+                <span class="inst-pill" title="Tongji University">
+                  <img src="assets/logos/tongji.png" alt="Tongji University" class="inst-emblem" />
+                  <span>Tongji University</span>
+                </span>
+                <span class="inst-pill inst-pill-wordmark" title="Shanghai Innovation Institute">
+                  <img src="assets/logos/sii.svg" alt="Shanghai Innovation Institute" class="inst-sii" />
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <p class="hero-statement">
+            I study how robots <em>foresee the world</em> and act with their <strong>whole body</strong>.
+          </p>
+
+          <p class="hero-bio">
+            My research focuses on <strong>Humanoid World Action Models</strong>, <strong>geometry-aware vision-language-action (VLA) policies</strong>, and <strong>whole-body locomotion &amp; control</strong>—bridging reinforcement learning, predictive representations, and real-world deployment on physical humanoids and quadrupeds.
+          </p>
+
+          <div class="focus-tags" aria-label="Research directions">
+            <span>Humanoid WAM</span>
+            <span>Vision-Language-Action</span>
+            <span>Whole-Body Control</span>
+            <span>Reinforcement Learning</span>
+            <span>Sim-to-Real</span>
+          </div>
+
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="https://scholar.google.com/citations?user=q47_njAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+              <span>Google Scholar</span>
+              <span aria-hidden="true">&#8599;</span>
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/chenyizhi123" target="_blank" rel="noopener noreferrer">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <button type="button" class="btn btn-secondary" data-copy-email="1839132568@qq.com">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email</span>
+            </button>
+            <a class="btn btn-secondary" href="#wechat">
+              <span>WeChat</span>
+              <span aria-hidden="true">&#8600;</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Live Robot Reel -->
+        <div class="hero-reel" aria-label="Live robotics video showcase">
+          <div class="reel-card">
+            <div class="reel-stage" id="reelStage">
+              <video
+                id="reelVideo"
+                class="reel-video"
+                src="assets/videos/zeta0_tidy_720p.mp4"
+                poster="assets/videos/zeta0_tidy_poster.jpg"
+                autoplay
+                muted
+                playsinline
+                preload="auto"
+              ></video>
+
+              <div class="reel-overlay-top">
+                <span class="reel-badge" id="reelBadge">
+                  <span class="reel-dot"></span>
+                  <span id="reelBadgeText">ζ₀ · Unitree G1 Autonomous Rollout</span>
+                </span>
+                <div class="reel-controls">
+                  <button type="button" class="reel-icon-btn" id="reelPlayPause" aria-label="Pause or play showcase video" title="Play / Pause">
+                    <svg class="ic-pause" width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="4" width="4" height="16" rx="1"/><rect x="14" y="4" width="4" height="16" rx="1"/></svg>
+                    <svg class="ic-play" width="13" height="13" viewBox="0 0 24 24" fill="currentColor" hidden><polygon points="6 4 20 12 6 20 6 4"/></svg>
+                  </button>
+                  <a class="reel-link-btn" id="reelProjectLink" href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">
+                    ζ₀ Project &#8599;
+                  </a>
+                </div>
+              </div>
+
+              <div class="reel-overlay-bottom">
+                <p class="reel-caption" id="reelCaption">
+                  Continuous 5-stage scene tidying on a physical Unitree G1 with joint scene-and-body foresight.
+                </p>
+                <div class="reel-progress-track">
+                  <div class="reel-progress-fill" id="reelProgressFill"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Clip Switcher -->
+            <div class="reel-switcher" role="tablist" aria-label="Select robotics highlight clip">
+              <button type="button" class="reel-tab active" role="tab" aria-selected="true" data-reel-idx="0">
+                <span class="rt-title">ζ₀ · Tidy Scene</span>
+                <span class="rt-sub">Unitree G1</span>
+              </button>
+              <button type="button" class="reel-tab" role="tab" aria-selected="false" data-reel-idx="1">
+                <span class="rt-title">ζ₀ · Hair Drying</span>
+                <span class="rt-sub">HRI · G1</span>
+              </button>
+              <button type="button" class="reel-tab" role="tab" aria-selected="false" data-reel-idx="2">
+                <span class="rt-title">ζ₀ · 7-Task Sim</span>
+                <span class="rt-sub">HumanoidArena</span>
+              </button>
+              <button type="button" class="reel-tab" role="tab" aria-selected="false" data-reel-idx="3">
+                <span class="rt-title">GeoAlign</span>
+                <span class="rt-sub">ALOHA · CoRL</span>
+              </button>
+              <button type="button" class="reel-tab" role="tab" aria-selected="false" data-reel-idx="4">
+                <span class="rt-title">UniLab</span>
+                <span class="rt-sub">RL · CoRL</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compact Highlight Strip -->
+      <div class="container">
+        <div class="metrics-strip">
+          <div class="metric-item">
+            <span class="metric-val">09</span>
+            <span class="metric-lbl">Research Papers</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val">03</span>
+            <span class="metric-lbl">First / Co-First Author</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val">CoRL · ICRA · RA-L</span>
+            <span class="metric-lbl">Published Venues</span>
+          </div>
+          <div class="metric-item">
+            <span class="metric-val">7+ Platforms</span>
+            <span class="metric-lbl">G1 · T1 · Go2/W · B2W · ALOHA</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LATEST UPDATES / NEWS TIMELINE -->
+    <section class="section band-tint" id="news" aria-labelledby="news-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">LATEST UPDATES</p>
+            <h2 id="news-title">News</h2>
+          </div>
+        </div>
+
+        <ol class="timeline">
+          <li class="timeline-item is-new">
+            <div class="tl-date"><time datetime="2026-11-23">Nov 2026</time></div>
+            <div class="tl-dot dot-teal"></div>
+            <div class="tl-body">
+              <span class="tl-tag tag-teal">New Release</span>
+              Released <a href="#zeta0"><strong>ζ₀</strong></a>, our World Action Model framework with joint scene-and-body foresight for whole-body humanoid control — check out the <a href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">interactive project page</a> and <a href="https://github.com/chenyizhi123/Zeta0" target="_blank" rel="noopener noreferrer">code &amp; data</a>.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="tl-date"><time datetime="2026-10-05">Oct 2026</time></div>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <a href="#glad"><strong>GLAD</strong></a> has been accepted to <em>IEEE Robotics and Automation Letters (RA-L)</em>.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="tl-date"><time datetime="2026-09-05">Sep 2026</time></div>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <a href="#geoalign"><strong>GeoAlign</strong></a> (first author) and <a href="#unilab"><strong>UniLab</strong></a> have been accepted to <em>CoRL 2026</em>.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="tl-date"><time datetime="2026-09-03">Sep 2026</time></div>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              <a href="#hierkick"><strong>HierKick</strong></a> (first author) has been accepted to <em>Robotica</em>.
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="tl-date"><time datetime="2026-01-31">Jan 2026</time></div>
+            <div class="tl-dot"></div>
+            <div class="tl-body">
+              Three papers — <a href="#a2cf"><strong>A2CF</strong></a>, <a href="#daac"><strong>DAAC</strong></a>, and <a href="#makp"><strong>MAKP</strong></a> — have been accepted to <em>ICRA 2026</em>.
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SELECTED PUBLICATIONS WITH LIVE VIDEO / DIAGRAM TOGGLES -->
+    <section class="section" id="research" aria-labelledby="research-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">RESEARCH</p>
+            <h2 id="research-title">Selected Publications</h2>
+          </div>
+          <a class="section-ext" href="https://scholar.google.com/citations?user=q47_njAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">
+            Full Google Scholar Profile &#8599;
+          </a>
+        </div>
+
+        <!-- Interactive Research Explorer -->
+        <div class="explorer-bar" id="publicationExplorer">
+          <div class="explorer-top">
+            <div class="topic-pills" role="group" aria-label="Filter papers by topic">
+              <button type="button" class="pill-btn active" data-topic-filter="all" aria-pressed="true">All Research</button>
+              <button type="button" class="pill-btn" data-topic-filter="vla" aria-pressed="false">WAM &amp; VLA</button>
+              <button type="button" class="pill-btn" data-topic-filter="locomotion" aria-pressed="false">Locomotion &amp; Control</button>
+              <button type="button" class="pill-btn" data-topic-filter="rl" aria-pressed="false">RL &amp; Systems</button>
+            </div>
+
+            <div class="explorer-right">
+              <label class="search-box">
+                <span class="sr-only">Search publications</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                <input type="search" id="paper-search" placeholder="Search papers, robots, methods…" autocomplete="off" />
+                <kbd>/</kbd>
+              </label>
+
+              <div class="status-group" role="group" aria-label="Filter by status">
+                <button type="button" class="status-btn active" data-status-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="status-btn" data-status-filter="accepted" aria-pressed="false">Accepted</button>
+                <button type="button" class="status-btn" data-status-filter="review" aria-pressed="false">Preprint / Review</button>
+              </div>
+            </div>
+          </div>
+          <div class="explorer-meta">
+            <p class="explorer-desc" id="explorerDesc">Explore connections across world action models, geometry-aware VLA policies, and whole-body robot control.</p>
+            <div class="explorer-count-wrap">
+              <span class="filter-summary" id="filterSummary" role="status" aria-live="polite">Showing 9 of 9 publications</span>
+              <button type="button" class="reset-btn" id="resetResearch" hidden>Reset &#8634;</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="empty-state" id="researchEmpty" hidden>
+          <p>No publications match the current filters.</p>
+          <button type="button" class="btn btn-secondary" id="clearResearch">Show all publications</button>
+        </div>
+
+        <!-- GROUP 1: FIRST-AUTHOR & CO-FIRST FLAGSHIP WORK -->
+        <div class="group-bar">
+          <h3>First &amp; Co-First Author</h3>
+          <span class="group-count">03 papers</span>
+        </div>
+
+        <div class="flagship-list">
+          <!-- ζ₀ -->
+          <article class="pub-card pub-flagship" id="zeta0" data-topics="vla locomotion" data-status="review" data-keywords="Unitree G1 humanoid world action model WAM foresight GR00T Psi0 whole-body control dual-response">
+            <div class="pub-media" data-media-switcher>
+              <div class="media-pane active" data-pane="video">
+                <video class="auto-vis-video" src="assets/videos/zeta0_tidy_720p.mp4" poster="assets/videos/zeta0_tidy_poster.jpg" muted loop playsinline preload="metadata"></video>
+                <span class="media-corner-tag">Unitree G1 · 5.6&times;</span>
+              </div>
+              <a class="media-pane media-diagram" data-pane="diagram" href="assets/architecture/zeta0.png" data-figure data-caption="ζ₀ — joint scene-and-body foresight &amp; dual-response transfer" aria-label="Enlarge ζ₀ architecture diagram">
+                <img src="assets/architecture/zeta0.png" width="1815" height="728" alt="ζ₀ architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+              <div class="media-toggle" role="tablist" aria-label="Switch media view">
+                <button type="button" class="mt-btn active" data-switch="video">&#9654; Live Demo</button>
+                <button type="button" class="mt-btn" data-switch="diagram">Architecture</button>
+              </div>
+            </div>
+
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-teal">Preprint · 2026</span>
+                <span class="role-pill">Co-first author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">
+                  ζ₀<span class="pub-subtitle">A Framework for World Action Models with Joint Scene and Body Foresight in Humanoid Control</span>
+                </a>
+              </h4>
+              <p class="pub-desc">
+                Turns VLA policies into humanoid World Action Models by forecasting future visual features and 29 measured body joints in a shared latent space, supervised in action space via dual-response transfer. Raises success by +18.8 / +9.0 pp on HumanoidArena and +16.7 / +10.0 pp across 300 real Unitree G1 trials.
+              </p>
+              <div class="pub-tags">
+                <span>World Action Model</span>
+                <span>Unitree G1</span>
+                <span>Ψ₀ &amp; GR00T N1.7</span>
+              </div>
+              <div class="pub-links">
+                <a class="plink plink-accent" href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">Project Page &#8599;</a>
+                <a class="plink" href="https://chenyizhi123.github.io/zeta0-project/assets/Zeta0-Humanoid-Full.pdf" target="_blank" rel="noopener noreferrer">Paper PDF &#8599;</a>
+                <a class="plink" href="https://github.com/chenyizhi123/Zeta0" target="_blank" rel="noopener noreferrer">Code &amp; Data &#8599;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- GeoAlign -->
+          <article class="pub-card pub-flagship" id="geoalign" data-topics="vla" data-status="accepted" data-keywords="ALOHA manipulation robot state spatial geometry VLA CoRL">
+            <div class="pub-media" data-media-switcher>
+              <div class="media-pane active" data-pane="video">
+                <video class="auto-vis-video" src="assets/geoalign-real-robot.mp4" poster="assets/geoalign-real-robot.jpg" muted loop playsinline preload="metadata"></video>
+                <span class="media-corner-tag">ALOHA · Real Robot</span>
+              </div>
+              <a class="media-pane media-diagram" data-pane="diagram" href="assets/architecture/geoalign.png" data-figure data-caption="GeoAlign — method overview" aria-label="Enlarge GeoAlign architecture diagram">
+                <img src="assets/architecture/geoalign.png" alt="GeoAlign architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+              <div class="media-toggle" role="tablist" aria-label="Switch media view">
+                <button type="button" class="mt-btn active" data-switch="video">&#9654; Real Robot</button>
+                <button type="button" class="mt-btn" data-switch="diagram">Architecture</button>
+              </div>
+            </div>
+
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-navy">CoRL 2026 · Accepted</span>
+                <span class="role-pill">First author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://arxiv.org/abs/2606.03240" target="_blank" rel="noopener noreferrer">
+                  GeoAlign<span class="pub-subtitle">Beyond Semantics with State-Guided Spatial Alignment in VLA Models</span>
+                </a>
+              </h4>
+              <p class="pub-desc">
+                Introduces robot-state-guided spatial alignment to inject fine-grained 3D geometric grounding into vision-language-action policies for accurate bimanual manipulation.
+              </p>
+              <div class="pub-tags">
+                <span>Spatial Alignment</span>
+                <span>VLA</span>
+                <span>ALOHA</span>
+              </div>
+              <div class="pub-links">
+                <a class="plink plink-accent" href="https://chenyizhi123.github.io/geoalign-project/" target="_blank" rel="noopener noreferrer">Project Page &#8599;</a>
+                <a class="plink" href="https://arxiv.org/abs/2606.03240" target="_blank" rel="noopener noreferrer">arXiv Paper &#8599;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- HierKick -->
+          <article class="pub-card pub-flagship" id="hierkick" data-topics="locomotion rl" data-status="accepted" data-keywords="Booster T1 soccer hierarchical reinforcement learning Robotica">
+            <div class="pub-media" data-media-switcher>
+              <a class="media-pane active media-photo" data-pane="photo" href="assets/robots/booster-t1-environment.png" data-figure data-caption="HierKick — Booster T1 real-world soccer test field" aria-label="Enlarge Booster T1 field photo">
+                <img src="assets/robots/booster-t1-environment.png" alt="Booster T1 humanoid robot on real soccer test field" loading="lazy" />
+                <span class="media-corner-tag">Booster T1 · Real Field</span>
+              </a>
+              <a class="media-pane media-diagram" data-pane="diagram" href="assets/architecture/hierkick.png" data-figure data-caption="HierKick — method overview" aria-label="Enlarge HierKick architecture diagram">
+                <img src="assets/architecture/hierkick.png" alt="HierKick architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+              <div class="media-toggle" role="tablist" aria-label="Switch media view">
+                <button type="button" class="mt-btn active" data-switch="photo">Real Robot</button>
+                <button type="button" class="mt-btn" data-switch="diagram">Architecture</button>
+              </div>
+            </div>
+
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-navy">Robotica · Accepted</span>
+                <span class="role-pill">First author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://arxiv.org/abs/2603.00948" target="_blank" rel="noopener noreferrer">
+                  HierKick<span class="pub-subtitle">Hierarchical Reinforcement Learning for Vision-Guided Soccer Robot Control</span>
+                </a>
+              </h4>
+              <p class="pub-desc">
+                Connects high-level visual decision-making with reusable low-level motion skills to smoothly coordinate approaching, aligning, dribbling, and kicking on a real humanoid.
+              </p>
+              <div class="pub-tags">
+                <span>Hierarchical RL</span>
+                <span>Booster T1</span>
+                <span>Vision-Guided</span>
+              </div>
+              <div class="pub-links">
+                <a class="plink" href="https://arxiv.org/abs/2603.00948" target="_blank" rel="noopener noreferrer">arXiv Paper &#8599;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- GROUP 2: CO-AUTHORED RESEARCH -->
+        <div class="group-bar coauthor-bar">
+          <h3>Co-Authored Research</h3>
+          <span class="group-count">06 papers</span>
+        </div>
+
+        <div class="coauthor-grid">
+          <!-- UniLab -->
+          <article class="pub-card pub-compact" id="unilab" data-topics="rl" data-status="accepted" data-keywords="CPU GPU simulation training infrastructure CoRL">
+            <div class="pub-media pub-media-sm" data-media-switcher>
+              <div class="media-pane active" data-pane="video">
+                <video class="auto-vis-video" src="assets/unilab-sharpa.mp4" poster="assets/unilab-sharpa.jpg" muted loop playsinline preload="metadata"></video>
+                <span class="media-corner-tag">Demo Video</span>
+              </div>
+              <a class="media-pane media-diagram" data-pane="diagram" href="assets/architecture/unilab.png" data-figure data-caption="UniLab — method overview" aria-label="Enlarge UniLab diagram">
+                <img src="assets/architecture/unilab.png" alt="UniLab architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+              <div class="media-toggle" role="tablist">
+                <button type="button" class="mt-btn active" data-switch="video">&#9654; Video</button>
+                <button type="button" class="mt-btn" data-switch="diagram">Diagram</button>
+              </div>
+            </div>
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-navy">CoRL 2026 · Accepted</span>
+                <span class="role-pill">Co-author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://arxiv.org/abs/2605.30313" target="_blank" rel="noopener noreferrer">
+                  UniLab<span class="pub-subtitle">A Heterogeneous Architecture for Robot RL Beyond GPU-Dominant Paradigms</span>
+                </a>
+              </h4>
+              <p class="pub-desc">Decouples CPU physics simulation and GPU policy learning for scalable, cross-platform robot RL training.</p>
+              <div class="pub-links">
+                <a class="plink plink-accent" href="https://unilabsim.github.io/" target="_blank" rel="noopener noreferrer">Project &#8599;</a>
+                <a class="plink" href="https://arxiv.org/abs/2605.30313" target="_blank" rel="noopener noreferrer">Paper &#8599;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- GLAD -->
+          <article class="pub-card pub-compact" id="glad" data-topics="vla locomotion rl" data-status="accepted" data-keywords="Unitree G1 terrain perception attention RA-L">
+            <div class="pub-media pub-media-sm" data-media-switcher>
+              <a class="media-pane active media-photo" data-pane="photo" href="assets/glad.png" data-figure data-caption="GLAD — Unitree G1 perceptive locomotion" aria-label="Enlarge GLAD real robot photo">
+                <img src="assets/glad.png" alt="Unitree G1 crossing terrain in GLAD" loading="lazy" />
+                <span class="media-corner-tag">Unitree G1</span>
+              </a>
+              <a class="media-pane media-diagram" data-pane="diagram" href="assets/architecture/glad.png" data-figure data-caption="GLAD — method overview" aria-label="Enlarge GLAD architecture diagram">
+                <img src="assets/architecture/glad.png" alt="GLAD architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+              <div class="media-toggle" role="tablist">
+                <button type="button" class="mt-btn active" data-switch="photo">Real G1</button>
+                <button type="button" class="mt-btn" data-switch="diagram">Diagram</button>
+              </div>
+            </div>
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-navy">RA-L · Accepted</span>
+                <span class="role-pill">Co-author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://arxiv.org/abs/2606.00637" target="_blank" rel="noopener noreferrer">
+                  GLAD<span class="pub-subtitle">Global-Local Attention Decomposition for Terrain Encoding in Humanoid Perceptive Locomotion</span>
+                </a>
+              </h4>
+              <p class="pub-desc">Separates global terrain context from state-conditioned foothold attention for reliable perceptive humanoid walking.</p>
+              <div class="pub-links">
+                <a class="plink" href="https://arxiv.org/abs/2606.00637" target="_blank" rel="noopener noreferrer">Paper &#8599;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- P³ -->
+          <article class="pub-card pub-compact" id="p3" data-topics="rl" data-status="review" data-keywords="VAE latent stochastic reinforcement learning AAAI">
+            <div class="pub-media pub-media-sm">
+              <a class="media-pane active media-diagram" href="assets/architecture/p3.png" data-figure data-caption="P³ — method overview" aria-label="Enlarge P³ architecture diagram">
+                <img src="assets/architecture/p3.png" alt="P³ architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+            </div>
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-slate">AAAI · Under review</span>
+                <span class="role-pill">Co-author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://arxiv.org/abs/2607.25541" target="_blank" rel="noopener noreferrer">
+                  P³<span class="pub-subtitle">Probabilistic Policy Propagation for Stable VAE-Based Robot Learning</span>
+                </a>
+              </h4>
+              <p class="pub-desc">Distribution-aware optimization for stable policy learning over stochastic latent action representations.</p>
+              <div class="pub-links">
+                <a class="plink" href="https://arxiv.org/abs/2607.25541" target="_blank" rel="noopener noreferrer">Paper &#8599;</a>
+                <a class="plink" href="https://github.com/ylyem9x/P3_Open" target="_blank" rel="noopener noreferrer">Code &#8599;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- A2CF -->
+          <article class="pub-card pub-compact" id="a2cf" data-topics="locomotion rl" data-status="accepted" data-keywords="humanoid motion skills curriculum assistance ICRA">
+            <div class="pub-media pub-media-sm">
+              <a class="media-pane active media-diagram" href="assets/architecture/a2cf.png" data-figure data-caption="A2CF — method overview" aria-label="Enlarge A2CF architecture diagram">
+                <img src="assets/architecture/a2cf.png" alt="A2CF architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+            </div>
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-navy">ICRA 2026 · Accepted</span>
+                <span class="role-pill">Co-author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://arxiv.org/abs/2506.23125" target="_blank" rel="noopener noreferrer">
+                  A2CF<span class="pub-subtitle">Learning Motion Skills with Adaptive Assistive Curriculum Force in Humanoid Robots</span>
+                </a>
+              </h4>
+              <p class="pub-desc">Adaptive assistive force guides early humanoid motion learning and anneals smoothly to autonomous skill execution.</p>
+              <div class="pub-links">
+                <a class="plink" href="https://arxiv.org/abs/2506.23125" target="_blank" rel="noopener noreferrer">Preprint &#8599;</a>
+                <a class="plink" href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_5.html#thi2i_317" target="_blank" rel="noopener noreferrer">Conference &#8599;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- DAAC -->
+          <article class="pub-card pub-compact" id="daac" data-topics="locomotion rl" data-status="accepted" data-keywords="Unitree Go2 quadruped disturbance compensation ICRA">
+            <div class="pub-media pub-media-sm" data-media-switcher>
+              <a class="media-pane active media-photo" data-pane="photo" href="assets/robots/go2-real-world.png" data-figure data-caption="DAAC — Unitree Go2 real-world disturbance compensation" aria-label="Enlarge Unitree Go2 real-world photo">
+                <img src="assets/robots/go2-real-world.png" alt="Unitree Go2 in real-world DAAC experiment" loading="lazy" />
+                <span class="media-corner-tag">Unitree Go2</span>
+              </a>
+              <a class="media-pane media-diagram" data-pane="diagram" href="assets/architecture/daac.png" data-figure data-caption="DAAC — method overview" aria-label="Enlarge DAAC architecture diagram">
+                <img src="assets/architecture/daac.png" alt="DAAC architecture diagram" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+              <div class="media-toggle" role="tablist">
+                <button type="button" class="mt-btn active" data-switch="photo">Real Go2</button>
+                <button type="button" class="mt-btn" data-switch="diagram">Diagram</button>
+              </div>
+            </div>
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-navy">ICRA 2026 · Accepted</span>
+                <span class="role-pill">Co-author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noopener noreferrer">
+                  DAAC<span class="pub-subtitle">Disturbance-Aware Adaptive Compensation in Hybrid Force-Position Locomotion Policy</span>
+                </a>
+              </h4>
+              <p class="pub-desc">Combines hybrid position-torque control with online disturbance estimation for resilient legged locomotion.</p>
+              <div class="pub-links">
+                <a class="plink" href="https://arxiv.org/abs/2506.00472" target="_blank" rel="noopener noreferrer">Preprint &#8599;</a>
+                <a class="plink" href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_4.html#wei2i_317" target="_blank" rel="noopener noreferrer">Conference &#8599;</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- MAKP -->
+          <article class="pub-card pub-compact" id="makp" data-topics="locomotion rl" data-status="accepted" data-keywords="Booster T1 soccer diffusion motion generation multi-critic curriculum ICRA">
+            <div class="pub-media pub-media-sm">
+              <a class="media-pane active media-diagram" href="assets/architecture/makp-overview.svg" data-figure data-caption="MAKP — method summary redrawn from the official ICRA abstract" aria-label="Enlarge MAKP method summary">
+                <img src="assets/architecture/makp-overview.svg" width="1280" height="420" alt="MAKP method summary" loading="lazy" />
+                <span class="zoom-chip" aria-hidden="true">Zoom &#8599;</span>
+              </a>
+            </div>
+            <div class="pub-body">
+              <div class="pub-meta">
+                <span class="venue-pill venue-navy">ICRA 2026 · Accepted</span>
+                <span class="role-pill">Co-author</span>
+              </div>
+              <h4 class="pub-title">
+                <a href="https://doi.org/10.1109/ICRA57385.2026.11697574" target="_blank" rel="noopener noreferrer">
+                  MAKP<span class="pub-subtitle">Multi-Mode Accurate Kicking Policy for Humanoid Robots</span>
+                </a>
+              </h4>
+              <p class="pub-desc">Diffusion-generated motions and staged multi-critic curriculum learning balance kicking accuracy and balance stability.</p>
+              <div class="pub-links">
+                <a class="plink" href="https://doi.org/10.1109/ICRA57385.2026.11697574" target="_blank" rel="noopener noreferrer">Paper &#8599;</a>
+                <a class="plink" href="https://ras.papercept.net/conferences/conferences/ICRA26/program/ICRA26_ContentListWeb_3.html#tui2i_158" target="_blank" rel="noopener noreferrer">Conference &#8599;</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REAL-WORLD HARDWARE GALLERY -->
+    <section class="section band-tint" id="platforms" aria-labelledby="platforms-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">REAL HARDWARE</p>
+            <h2 id="platforms-title">Embodied Platforms in Action</h2>
+          </div>
+          <p class="section-sub-right">Unitree G1 · Booster T1 · Unitree Go2 / Go2W / B2W · HONOR · ALOHA</p>
+        </div>
+
+        <div class="bento-hardware">
+          <div class="hw-tile hw-wide">
+            <video class="auto-vis-video" src="assets/videos/zeta0_hair_720p.mp4" poster="assets/videos/zeta0_hair_poster.jpg" muted loop playsinline preload="metadata"></video>
+            <div class="hw-caption">
+              <span class="hw-badge">Unitree G1 · Human-Robot Interaction</span>
+              <p>ζ₀ closed-loop hair drying with dual dexterous hands &amp; SONIC controller</p>
+            </div>
+          </div>
+
+          <a class="hw-tile" href="assets/robots/booster-t1-environment.png" data-figure data-caption="Booster T1 — Real-world vision-guided soccer control (HierKick)">
+            <img src="assets/robots/booster-t1-environment.png" alt="Booster T1 humanoid robot on real soccer field" loading="lazy" />
+            <div class="hw-caption">
+              <span class="hw-badge">Booster T1</span>
+              <p>Vision-guided soccer locomotion &amp; kicking</p>
+            </div>
+          </a>
+
+          <a class="hw-tile" href="assets/robots/go2-real-world.png" data-figure data-caption="Unitree Go2 — Hybrid force-position disturbance compensation (DAAC)">
+            <img src="assets/robots/go2-real-world.png" alt="Unitree Go2 quadruped robot real-world experiment" loading="lazy" />
+            <div class="hw-caption">
+              <span class="hw-badge">Unitree Go2</span>
+              <p>Disturbance-aware legged locomotion</p>
+            </div>
+          </a>
+
+          <a class="hw-tile" href="assets/glad.png" data-figure data-caption="Unitree G1 — Perceptive terrain locomotion (GLAD)">
+            <img src="assets/glad.png" alt="Unitree G1 perceptive terrain crossing" loading="lazy" />
+            <div class="hw-caption">
+              <span class="hw-badge">Unitree G1 · Locomotion</span>
+              <p>Global-local terrain attention walking</p>
+            </div>
+          </a>
+
+          <a class="hw-tile" href="assets/geoalign-real-robot.jpg" data-figure data-caption="ALOHA — State-guided spatial alignment for tabletop manipulation (GeoAlign)">
+            <img src="assets/geoalign-real-robot.jpg" alt="ALOHA bimanual manipulation setup" loading="lazy" />
+            <div class="hw-caption">
+              <span class="hw-badge">ALOHA · Bimanual</span>
+              <p>Geometry-aware VLA manipulation</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- HANDS-ON ENGINEERING & SYSTEMS -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">HANDS-ON ENGINEERING</p>
+            <h2 id="projects-title">From Policies to Real Robots</h2>
+          </div>
+        </div>
+
+        <div class="systems-grid">
+          <article class="system-card">
+            <div class="sys-top">
+              <span class="sys-kicker">PERCEPTION &amp; CONTROL</span>
+              <span class="sys-badge">Team Lead · 4 Engineers</span>
+            </div>
+            <h3>Wheel-Legged Locomotion &amp; Perceptive Walking</h3>
+            <p>
+              Led a four-person engineering team building real-time wheel-legged locomotion stacks, proprioceptive state estimation, depth-camera perception, LiDAR elevation mapping, and multi-sensor terrain fusion on physical hardware.
+            </p>
+            <div class="sys-tags">
+              <span>State Estimation</span>
+              <span>Depth + LiDAR Fusion</span>
+              <span>Elevation Maps</span>
+              <span>Wheel-Legged Control</span>
+            </div>
+          </article>
+
+          <article class="system-card">
+            <div class="sys-top">
+              <span class="sys-kicker">SIM-TO-REAL DEPLOYMENT</span>
+              <span class="sys-badge">7+ Physical Platforms</span>
+            </div>
+            <h3>Humanoid &amp; Quadruped Policy Deployment</h3>
+            <p>
+              Full-stack deployment and real-world evaluation across Unitree G1, Go2, Go2W, B2W, Booster T1, HONOR quadrupeds, and ALOHA—spanning demonstration capture, asynchronous receding-horizon inference, motion-control validation, and failure localization.
+            </p>
+            <div class="sys-tags">
+              <span>Sim-to-Real</span>
+              <span>Real-Time Inference</span>
+              <span>Whole-Body Teleop</span>
+              <span>System Debugging</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & WECHAT -->
+    <section class="section band-tint" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-left">
+          <p class="eyebrow">CONTACT</p>
+          <h2 id="contact-title">Let’s connect.</h2>
+          <p class="contact-lead">
+            Always happy to discuss humanoid World Action Models, VLA policies, whole-body control, and research collaborations.
+          </p>
+
+          <div class="email-cards">
+            <div class="email-row">
+              <div>
+                <span class="email-lbl">Primary Email</span>
+                <a class="email-addr" href="mailto:1839132568@qq.com">1839132568@qq.com</a>
+              </div>
+              <button type="button" class="copy-chip" data-copy-email="1839132568@qq.com">Copy</button>
+            </div>
+            <div class="email-row">
+              <div>
+                <span class="email-lbl">Secondary Email</span>
+                <a class="email-addr" href="mailto:15970600542@163.com">15970600542@163.com</a>
+              </div>
+              <button type="button" class="copy-chip" data-copy-email="15970600542@163.com">Copy</button>
+            </div>
+          </div>
+
+          <p class="contact-aff">Tongji University &middot; Shanghai Innovation Institute</p>
+          <div class="contact-links">
+            <a class="btn btn-secondary" href="https://scholar.google.com/citations?user=q47_njAAAAAJ&amp;hl=en" target="_blank" rel="noopener noreferrer">Google Scholar &#8599;</a>
+            <a class="btn btn-secondary" href="https://github.com/chenyizhi123" target="_blank" rel="noopener noreferrer">GitHub &#8599;</a>
+          </div>
+        </div>
+
+        <figure class="wechat-card" id="wechat">
+          <div class="wechat-head">
+            <h3>WeChat <span>微信</span></h3>
+            <p>Scan to connect directly</p>
+          </div>
+          <a class="wechat-img-wrap" href="assets/wechat-contact.jpg" data-figure data-caption="WeChat · 微信" aria-label="Enlarge Yizhi Chen’s WeChat QR code">
+            <img src="assets/wechat-contact.jpg" width="888" height="1131" alt="Yizhi Chen’s WeChat QR code" loading="lazy" />
+          </a>
+          <div class="wechat-foot">
+            <span>Click QR to enlarge</span>
+            <a href="assets/wechat-contact.jpg" download="Yizhi-Chen-WeChat.jpg">Save QR &#8595;</a>
+          </div>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimalist Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>&copy; <span id="year">2026</span> Yizhi Chen &middot; Embodied Intelligence &amp; Robot Learning</span>
+      <div class="footer-links">
+        <a href="credits.html">Media credits</a>
+        <a href="https://chenyizhi123.github.io/zeta0-project/" target="_blank" rel="noopener noreferrer">ζ₀ Project &#8599;</a>
+        <a href="#top">Back to top &#8593;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Zoomable Figure Lightbox Modal -->
+  <dialog class="figure-dialog" aria-labelledby="figure-dialog-title">
+    <div class="dialog-toolbar">
+      <h2 id="figure-dialog-title">Method overview</h2>
+      <div class="dialog-toolbar-right">
+        <a class="original-link" href="assets/architecture/zeta0.png" target="_blank" rel="noopener noreferrer">Original &#8599;</a>
+        <button type="button" class="dialog-close" aria-label="Close image">&times;</button>
+      </div>
+    </div>
+    <div class="zoom-toolbar" role="group" aria-label="Image zoom controls">
+      <button type="button" class="zoom-out" aria-label="Zoom out">&minus;</button>
+      <output class="zoom-value" aria-live="polite">100%</output>
+      <button type="button" class="zoom-in" aria-label="Zoom in">+</button>
+      <button type="button" class="zoom-fit">Fit</button>
+      <span class="zoom-hint" id="zoom-help">Zoom in, then drag to inspect &middot; + / &minus; to zoom &middot; 0 to reset</span>
+    </div>
+    <div class="dialog-image-area" tabindex="0" role="region" aria-label="Zoomable image" aria-describedby="zoom-help">
+      <div class="image-stage"><img alt="" draggable="false" /></div>
+    </div>
+  </dialog>
+
+  <!-- Quick Navigation Command Palette (Cmd+K) -->
+  <dialog class="command-dialog" aria-labelledby="command-title">
+    <div class="command-top">
+      <div>
+        <p class="eyebrow">QUICK NAVIGATION</p>
+        <h2 id="command-title">Jump to section or paper</h2>
+      </div>
+      <button type="button" class="command-close" aria-label="Close quick navigation">&times;</button>
+    </div>
+    <label class="command-search">
+      <span class="sr-only">Search sections and publications</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="search" placeholder="Type ζ₀, GeoAlign, Unitree G1, Contact…" autocomplete="off" />
+    </label>
+    <div class="command-results"></div>
+    <p class="command-empty" role="status" hidden>No matching destination.</p>
+    <div class="command-footer">
+      <span>&#8593; &#8595; navigate &middot; Enter open</span>
+      <span>Esc close</span>
+    </div>
+  </dialog>
+
+  <!-- Subtle Toast Notification -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
