@@ -114,7 +114,7 @@ let researchTopic = 'all';
 let researchStatus = 'all';
 const topicDescriptions = {
   all: 'Explore connections across robot perception, control, and learning.',
-  vla: 'Geometry-aware VLA policies and terrain representations for perception-guided action.',
+  vla: 'Geometry-aware VLA policies, humanoid World Action Models, and terrain representations for perception-guided action.',
   locomotion: 'Humanoid skills, legged locomotion, and reliable control on real robots.',
   rl: 'Learning algorithms, motion skills, and scalable infrastructure for robot reinforcement learning.'
 };
@@ -124,7 +124,7 @@ function filterPublications() {
   let visible = 0;
   for (const card of cards) {
     const topicMatch = researchTopic === 'all' || card.dataset.topics.split(' ').includes(researchTopic);
-    const status = card.querySelector('.venue').textContent.includes('Under review') ? 'review' : 'accepted';
+    const status = /Under review|Preprint/.test(card.querySelector('.venue').textContent) ? 'review' : 'accepted';
     const statusMatch = researchStatus === 'all' || researchStatus === status;
     const queryMatch = !query || normalizeText(card.textContent + ' ' + (card.dataset.keywords || '')).includes(query);
     card.hidden = !(topicMatch && statusMatch && queryMatch);
